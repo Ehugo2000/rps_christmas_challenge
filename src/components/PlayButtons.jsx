@@ -5,7 +5,7 @@ const PlayButtons = (props) => {
   return (
     <>
       <Button
-      color="pink"
+        color="pink"
         animated="vertical"
         data-cy="rock-btn"
         onClick={() => props.callBack("rock")}
@@ -17,7 +17,7 @@ const PlayButtons = (props) => {
       </Button>
 
       <Button
-      color="blue"
+        color="blue"
         animated="vertical"
         data-cy="paper-btn"
         onClick={() => props.callBack("paper")}
@@ -29,7 +29,7 @@ const PlayButtons = (props) => {
       </Button>
 
       <Button
-      color="purple"
+        color="purple"
         animated="vertical"
         data-cy="scissor-btn"
         onClick={() => props.callBack("scissor")}
@@ -39,16 +39,6 @@ const PlayButtons = (props) => {
           <Icon name="hand scissors" />
         </Button.Content>
       </Button>
-      {/*     
-      <button data-cy="rock-btn"
-      onClick={() => props.callBack("rock")}
-      >Play Rock</button>
-      <button data-cy="paper-btn"
-       onClick={() => props.callBack("paper")}
-      >Play Paper</button>
-      <button data-cy="scissor-btn"
-       onClick={() => props.callBack("scissor")}
-       >Play Scissor</button> */}
     </>
   );
 };

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Header from "./components/Header";
 import PlayButtons from "./components/PlayButtons";
 import DisplayResults from "./components/DisplayResults";
-import { Container, Grid } from "semantic-ui-react";
+import { Grid } from "semantic-ui-react";
 
 export const App = () => {
   const [userChoice, setUserChoice] = useState();
