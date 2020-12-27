@@ -4,8 +4,9 @@ vertical-align: middle;
 margin-top: 80px;
 background-color: rgb(1, 223, 185);
 opacity: .9;
-border-radius: 50%;
-
+border-radius: 60%;
+margin-left: 10%;
+margin-right: 10%;
 }
 
 body {
