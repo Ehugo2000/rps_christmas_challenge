@@ -1,0 +1,24 @@
+#container-grid {
+text-align: center;
+vertical-align: middle;
+margin-top: 80px;
+background-color: rgb(1, 223, 185);
+opacity: .9;
+border-radius: 50%;
+
+}
+
+body {
+  background-image: url(../images/rock-paper-scissors-hand-icons.webp);
+  background-size: cover;
+
+}
+
+#header-text {
+  color: rgb(254, 44, 240);
+  
+}
+
+#result-text {
+  color: rgb(13, 125, 235)
+}
