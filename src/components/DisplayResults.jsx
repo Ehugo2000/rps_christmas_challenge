@@ -7,6 +7,7 @@ const DisplayResults = (props) => {
       <h3 data-cy="display-computer-choice">
         Computer chose {props.computerChoice}
       </h3>
+  <h3>Result: {props.result}</h3>
     </div>
   );
 };

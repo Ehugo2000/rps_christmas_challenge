@@ -7,10 +7,33 @@ import { Grid } from "semantic-ui-react";
 export const App = () => {
   const [userChoice, setUserChoice] = useState();
   const [computerChoice, setComputerChoice] = useState();
+  const [result, setResult] = useState();
 
-  const callBack = (buttonUserChoice) => {
-    setUserChoice(buttonUserChoice);
-    setComputerChoice(getComputerChoice());
+  const callBack = (selectedWeapon) => {
+    setUserChoice(selectedWeapon);
+    const computerChoice = getComputerChoice();
+    setComputerChoice(computerChoice);
+    setResult(getResult(selectedWeapon, computerChoice));
+  };
+
+  const getResult = (selectedWeapon, computerWeapon) => {
+    if (selectedWeapon === computerWeapon) {
+      return "draw";
+    }
+    if (
+      (selectedWeapon === "rock" && computerWeapon === "scissor") ||
+      (selectedWeapon === "paper" && computerWeapon === "rock") ||
+      (selectedWeapon === "scissor" && computerWeapon === "paper")
+    ) {
+      return "win";
+    }
+    if (
+      (selectedWeapon === "rock" && computerWeapon === "paper") ||
+      (selectedWeapon === "paper" && computerWeapon === "scissor") ||
+      (selectedWeapon === "scissor" && computerWeapon === "rock")
+    ) {
+      return "lose";
+    }
   };
 
   const getComputerChoice = () => {
@@ -34,7 +57,7 @@ export const App = () => {
         </Grid.Row>
         <Grid.Row>
           <Grid.Column width={16}>
-            <PlayButtons callBack={callBack} />
+            <PlayButtons onSelectWeapon={callBack} />
           </Grid.Column>
         </Grid.Row>
         <Grid.Row>
@@ -42,6 +65,7 @@ export const App = () => {
             <DisplayResults
               myChoice={userChoice}
               computerChoice={computerChoice}
+              result={result}
             />
           </Grid.Column>
         </Grid.Row>

@@ -8,7 +8,7 @@ const PlayButtons = (props) => {
         color="pink"
         animated="vertical"
         data-cy="rock-btn"
-        onClick={() => props.callBack("rock")}
+        onClick={() => props.onSelectWeapon("rock")}
       >
         <Button.Content visible>Play Rock</Button.Content>
         <Button.Content hidden>
@@ -20,7 +20,7 @@ const PlayButtons = (props) => {
         color="blue"
         animated="vertical"
         data-cy="paper-btn"
-        onClick={() => props.callBack("paper")}
+        onClick={() => props.onSelectWeapon("paper")}
       >
         <Button.Content visible>Play Paper</Button.Content>
         <Button.Content hidden>
@@ -32,7 +32,7 @@ const PlayButtons = (props) => {
         color="purple"
         animated="vertical"
         data-cy="scissor-btn"
-        onClick={() => props.callBack("scissor")}
+        onClick={() => props.onSelectWeapon("scissor")}
       >
         <Button.Content visible>Play Scissor</Button.Content>
         <Button.Content hidden>
