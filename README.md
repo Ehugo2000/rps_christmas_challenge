@@ -20,8 +20,8 @@ I want to see the results
 ```
 
 ## Links
-- GitHub: (xxx)
-- Netlify: (xxx)
+- GitHub: (https://github.com/Ehugo2000/rps_christmas_challenge)
+- Netlify: (https://ehugo2000-rps.netlify.app/)
 ​
 
 ## Dependencies
